@@ -262,11 +262,11 @@ public class GraphDrawing extends JFrame implements MouseListener, MouseMotionLi
                             i++;
                         }
                     }
-                    {
+                    
                         if (!x) {
                             showMessageDialog(null, "กรุณาใสอักขระ");
                         }
-                    }
+                    
                 }
             }
         });
@@ -874,12 +874,12 @@ public class GraphDrawing extends JFrame implements MouseListener, MouseMotionLi
         help1 += "CTRL+N ทำการสุ่มตำแหน่งของสถานะที่อยูบนหน้าจอ<br>";
         help1 += "CTRL+K ช่วยในการจัดรูป<br>";
         help1 += "CTRL+L ช่วยในการจัดรูป<br>";
-        help1 += "สามารถใช้ปุ่มลูกศรเพื่อขยับ automata<br>";
+        help1 += "สามารถใช้สัญลักษณ์ลูกศร บนแป้นพิมพ์คอมพิวเตอร์ ในการขยับ Automata<br>";
         
         helpString1.setText(help1);
         boxHelp1.add(helpString1);
         boxHelp1.setAutoscrolls(true);
-        frameHelp1.setBounds(screenSize.width / 2 - 500, screenSize.height / 2 - 200, 1000, 300);
+        frameHelp1.setBounds(screenSize.width / 2 - 500, screenSize.height / 2 - 200, 1000, 350);
         frameHelp1.setVisible(true);
     }
 
