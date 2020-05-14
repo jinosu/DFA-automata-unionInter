@@ -254,7 +254,7 @@ ArrayList<Integer> max = new ArrayList<>();
                             i++;
                         }
                     }
-                    else{
+                    if(x&&!(backup ==null)){
                          if (backup.VertexsBackup.size() != 0) {
                             cb.addItem("DFA" + String.valueOf(i));
                           
@@ -262,6 +262,10 @@ ArrayList<Integer> max = new ArrayList<>();
                             i++;
                         }
                     }
+                    {
+                      if(!x)
+                    showMessageDialog(null, "กรุณาใสอักขระ");
+                }
                 }
             }
         });
@@ -884,6 +888,7 @@ show2.addActionListener(new ActionListener() {
         help1 += "CTRL+N ทำการสุ่มตำแหน่งของสถานะที่อยูบนหน้าจอ<br>";
         help1 += "CTRL+K ช่วยในการจัดรูป<br>";
         help1 += "CTRL+L ช่วยในการจัดรูป<br>";
+        
         
         helpString1.setText(help1);
         boxHelp1.add(helpString1);
